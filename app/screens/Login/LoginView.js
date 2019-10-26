@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import PropTypes from 'prop-types';
+import { Button } from 'react-native-ui-kitten';
 
 class LoginView extends Component {
     navigate = () => {
@@ -15,6 +16,9 @@ class LoginView extends Component {
                 <TouchableOpacity onPress={this.navigate}>
                     <Text>Go to Home</Text>
                 </TouchableOpacity>
+                <Button>
+                    Test Here 
+                </Button>
             </View>
         );
     }
